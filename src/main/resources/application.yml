@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: html-mail-example
+  mail:
+    default-encoding: UTF-8
+    host: localhost
+    port: 1025
+

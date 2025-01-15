@@ -1,0 +1,33 @@
+<h1><b>Hello {{name}},</b></h1>
+<br>
+
+<!--if author exists in the context-->
+{{#author}}
+<i style="color: red">{{author}} has new blog entries.</i>
+<br>
+{{/author}}
+
+<!--if author doesn't exist in the context-->
+{{^author}}
+
+<p style="text-color: red">There are no blog entries.</p>
+{{/author}}
+
+{{#blogEntriesExist}}
+These are the latest blog entries for you:
+
+<ul>
+    <!-- Loop through email -->
+    {{#blogEntries}}
+    <li>
+        <b>{{subject}}</b> - {{body}}
+    </li>
+    {{/blogEntries}}
+</ul>
+{{/blogEntriesExist}}
+
+{{^blogEntriesExist}}
+<b>These are the no blog entries for you</b>
+{{/blogEntriesExist}}
+
+Greetings from Spring Boot!
