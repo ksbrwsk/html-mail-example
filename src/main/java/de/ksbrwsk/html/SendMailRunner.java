@@ -44,9 +44,9 @@ public class SendMailRunner implements ApplicationRunner {
         context.put("name", "John Doe");
         context.put("author", "Jane Doe");
         List<BlogEntry> blogEntries = new ArrayList<>();
-        blogEntries.add(new BlogEntry("Blog Entry Subject 1", "Blog Body 1"));
-        blogEntries.add(new BlogEntry("Blog Entry Subject 2", "BLog Body 2"));
-        blogEntries.add(new BlogEntry("Blog Entry Subject 3", "Blog Body 3"));
+        blogEntries.add(new BlogEntry("Blog Entry Subject 1", "Blog Body 1 ..."));
+        blogEntries.add(new BlogEntry("Blog Entry Subject 2", "Blog Body 2 ..."));
+        blogEntries.add(new BlogEntry("Blog Entry Subject 3", "Blog Body 3 ..."));
         context.put("blogEntries", blogEntries);
         context.put("blogEntriesExist", !blogEntries.isEmpty());
         Mustache.Compiler compiler = Mustache.compiler();

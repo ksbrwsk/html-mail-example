@@ -5,4 +5,5 @@ spring:
     default-encoding: UTF-8
     host: localhost
     port: 1025
-
+  mustache:
+    check-template-location: false

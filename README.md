@@ -7,12 +7,14 @@ Build & run
 
 * Java 21
 * Apache Maven (https://maven.apache.org/)
+* Docker (https://www.docker.com/)
 
+Change your SMTP server settings in the  file:
 ```bash
 ./src/main/resources/application.yml
 ```
 
-Start by setting the SMTP server configuration in the `compose.yaml` file
+Start by setting up the Mailpit SMTP server in the `compose.yaml` file
 by running the following command:
 
 ```bash
@@ -36,3 +38,6 @@ or
 ```bash
 mvn spring-boot:run
 ```
+
+Point your browser to http://localhost:8025 to check to check your Mailpit inbox.
+
